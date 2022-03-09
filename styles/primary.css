@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root{
+    --very-ligth-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --pink-hospital: #FF85E0;
+    --black: #0C0F0A;
+    --white: ##F5F5F5;
+}
