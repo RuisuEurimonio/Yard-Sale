@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title> New User. </title>
 </head>
 <body>
 
-    <div class="login">
-        <div class="form-container">
-            <img src="" alt="logo" class="logo" />
-            <h1 class="title"> Create a new password. </h1>
-            <p class="subtitle"> Enter a new password for you account. </p>
+    <!-- Create new password section.-->
+    <main>
+        <section>
+            <div class="newPassword">
+                <!-- Content. -->
+                <div class="newPassword__container">
+                    <!-- Logo.-->
+                    <img class="newPassword__logo" src="./assets/logos/logo_yard_sale.svg" alt="logo" />
 
-            <form action="/" class="form">
+                    <!-- Title and description.-->
+                    <h1 class="newPassword__title"> Create a new password. </h1>
+                    <p class="newPassword_subtitle"> Enter a new password for you account. </p>
 
-                <label class="label" for="password"> Password. </label>
-                <input class="input input-password" type="password" id="password" name="password" placeholder="*********" />
+                    <!-- Form. -->
+                    <form class="form" action="#">
+                        <!-- Password -->
+                        <label class="form__label" for="password"> Password. </label>
+                        <input class="input form__label--password" type="password" id="password" name="password" placeholder="Enter a password."/>
 
-                <label class="label" for="new-password"> Repeat password. </label>
-                <input class="input input-password" type="password" id="new-password" name="new-password" placeholder="*********" />
+                        <!-- Repeat password -->
+                        <label class="form__label" for="confirmPassword"> Password. </label>
+                        <input class="input form__label--confirmPassword" type="confirmPassword" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
 
-                <input class="primary-button login-button" type="submit" value="Confirm.">
-
-            </form>
-        </div>
-    </div>
+                        <!-- button for send the form.-->
+                        <label class="button form__button" type="submit"> </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
