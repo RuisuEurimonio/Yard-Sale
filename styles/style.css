@@ -144,7 +144,7 @@ body{
     transition: .1s;
 }
 
-/* Design for the moviles. */
+/* Design for the mobiles. */
 
 @media only screen and (max-width: 375px){
     .newCard__container{
@@ -152,7 +152,7 @@ body{
     }
 }
 
-/* Design for the moviles and tablets. */
+/* Design for the mobiles and tablets. */
 
 @media only screen and (max-width: 640px){
         .newCard__logo{
@@ -225,7 +225,7 @@ body{
 
 @media only screen and (min-width: 376px){
     .newCard__container--sign-up{
-        margin-top: -350px;
+        align-self: start;
     }
 
     .newCard__button--sign-up{
@@ -234,7 +234,7 @@ body{
     }
 }
 
-/* Design for moviles. */
+/* Design for mobiles. */
 
 @media only screen and (max-width: 375px) {
         .newCard__container--sign-up{
@@ -244,6 +244,14 @@ body{
 
         .newCard__button--sign-up{
             width: 70%;
+    }
+}
+
+/* Design for moviles when the keyboard is active. */
+@media only screen and (max-height:500px){
+    .newCard__container--sign-up{
+        position: relative;
+        padding-bottom: 20px;
     }
 }
 
