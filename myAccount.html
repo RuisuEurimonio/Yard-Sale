@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title> My account. </title>
+</head>
+<body>
+    
+    <!-- Create new my account section.-->
+    <main>
+        <section>
+            <div class="newCard">
+                <!-- Content. -->
+                <div class="newCard__container">
+
+                    <!-- Title. -->
+                    <h1 class="newCard__title newCard__title--account"> My account. </h1>
+
+                    <!-- Form. -->
+                    <form class="form" action="#">
+                        <!-- Name -->
+                        <label class="form__label" for="name"> Name. </label>
+                        <input class="input form__label--name" type="text" id="name" name="name" placeholder="Enter a name."/>
+
+                        <!-- Email address. -->
+                        <label class="form__label" for="email"> Email address. </label>
+                        <input class="input form__label--email" type="email" id="email" name="email" placeholder="Enter a email." />
+
+                        <!-- Password. -->
+                        <label class="form__label" for="password"> Password. </label>
+                        <input class="input form__label--password" type="password" id="password" name="password" placeholder="Enter a password." />
+
+                        <!-- Option for can view the password in the last input. -->
+                        <div class="form__container--view">
+                            <input class="form__view" type="checkbox" id="cbxView" /> 
+                            <label class="form__label form__label--view" for="cbxView"> View the password. </label>
+                        </div>
+
+                        <!-- button for create. -->
+                        <input class="button button__primary form__button" type="submit" value="Create." />
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

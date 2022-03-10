@@ -21,6 +21,7 @@ body{
 /* =============== Start Register.html ===============*/
 /* =============== Start Email.html ===============*/
 /* =============== Start Login.html ===============*/
+/* =============== Start MyAccount.html ===============*/
 
 /* Create new password section. */
 
@@ -110,7 +111,7 @@ body{
 
 .form__button{
     margin-top:14px;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 /* Button for send the form. */
@@ -199,14 +200,6 @@ body{
 
 /* =============== End Email.html ===============*/
 
-/* Text with a link for remember a password  */
-
-/* Option for can save the session. */
-
-.form__container--remember{
-    margin-top: -14px;
-}
-
 /* Text with a link for get the password. */
 
 .newCard__container--forgot{
@@ -256,3 +249,11 @@ body{
 }
 
 /* =============== End Login.html ===============*/
+
+/* Title. */
+
+.newCard__title--account{
+    text-align:start;
+}
+
+/* =============== End MyAccount.html ===============*/
