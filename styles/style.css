@@ -1,17 +1,154 @@
-*{
+body{
+    font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: 'Quicksand', sans-serif;
-}
-
 :root{
-    --very-ligth-pink: #C7C7C7;
+    --very-ligth-pink: #838383;
     --text-input-field: #F7F7F7;
     --pink-hospital: #FF85E0;
     --black: #0C0F0A;
     --white: ##F5F5F5;
+    --shadows: #F2B5D4;
+    --secundary-color: #F7D6E0;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
 }
+
+/* =============== Start Register.html ===============*/
+
+/* Create new password section. */
+
+.newPassword{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* Content. */
+
+.newPassword__container{
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    background-color: var(--secundary-color);
+    padding: 20px;
+    border: 2px solid var(--pink-hospital);
+    border-radius: 8px;
+    box-shadow: 0px 20px 60px 25px var(--shadows);
+}
+
+/* Logo. */
+
+.newPassword__logo{
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    justify-self: center;
+    display: none;
+}
+
+/* Title and description. */
+
+.newPassword__title{
+    font-size: var(--lg);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.newPassword__subtitle{
+    color: var(--very-ligth-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+/* Form */
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Password and Repeat passwornd. */
+
+.form__label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input{
+    background-color: var(--text-input-field);
+    border: .5px solid var(--pink-hospital);
+    border-radius: 8px;
+    height: 25px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+    transition: .5s;
+    outline: none;
+}
+
+.input:hover,
+.input:focus,
+.input:active{
+    border: 2px solid var(--pink-hospital);
+    transition: .3s;
+}
+
+/* Option for can view the password in the last inputs. */
+
+.form__button{
+    margin-top:14px;
+    margin-bottom:30px;
+}
+
+/* Button for send the form. */
+
+.button{
+    background-color: var(--pink-hospital);
+    border-radius: 8px;
+    border:none;
+    color: var(--white);
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    font-size: var(--md);
+    transition: 1s;
+}
+
+.button:hover{
+    transform: scale(0.95);
+    transition: 1s;
+}
+
+.button:active{
+    transform: scale(1.02);
+    transition: .1s;
+}
+
+/* Design for the moviles. */
+
+@media only screen and (max-width: 375px){
+    .newPassword__container{
+        width: 70%;
+    }
+}
+
+/* Design for the moviles and tablets. */
+
+@media only screen and (max-width: 640px){
+        .newPassword__logo{
+        display: block;
+    }
+}
+
+/* =============== End Register.html ===============*/

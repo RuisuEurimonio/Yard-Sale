@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title> New User. </title>
 </head>
 <body>
@@ -20,7 +23,7 @@
 
                     <!-- Title and description.-->
                     <h1 class="newPassword__title"> Create a new password. </h1>
-                    <p class="newPassword_subtitle"> Enter a new password for you account. </p>
+                    <p class="newPassword__subtitle"> Enter a new password for you account. </p>
 
                     <!-- Form. -->
                     <form class="form" action="#">
@@ -28,12 +31,19 @@
                         <label class="form__label" for="password"> Password. </label>
                         <input class="input form__label--password" type="password" id="password" name="password" placeholder="Enter a password."/>
 
-                        <!-- Repeat password -->
-                        <label class="form__label" for="confirmPassword"> Password. </label>
+                        <!-- Repeat password. -->
+                        <label class="form__label" for="confirmPassword"> Repeat password. </label>
                         <input class="input form__label--confirmPassword" type="confirmPassword" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
 
-                        <!-- button for send the form.-->
-                        <label class="button form__button" type="submit"> </label>
+                        <!-- Option for can view the passwords in the last inputs. -->
+                        <div class="form__container--view">
+                            <input class="form__view" type="checkbox" id="cbxView" /> 
+                            <label class="form__label form__label--view" for="cbxView"> View the passwords. </label>
+                        </div>
+
+                        <!-- button for send the form. -->
+                        <input class="button form__button" type="submit" value="Confirm." />
+
                     </form>
                 </div>
             </div>
