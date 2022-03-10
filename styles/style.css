@@ -19,10 +19,11 @@ body{
 }
 
 /* =============== Start Register.html ===============*/
+/* =============== Start Email.html ===============*/
 
 /* Create new password section. */
 
-.newPassword{
+.newCard{
     width: 100%;
     height: 100vh;
     display: grid;
@@ -31,7 +32,7 @@ body{
 
 /* Content. */
 
-.newPassword__container{
+.newCard__container{
     margin: 20px auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -45,7 +46,7 @@ body{
 
 /* Logo. */
 
-.newPassword__logo{
+.newCard__logo{
     width: 40%;
     margin-top: 10px;
     margin-bottom: 28px;
@@ -55,13 +56,13 @@ body{
 
 /* Title and description. */
 
-.newPassword__title{
+.newCard__title{
     font-size: var(--lg);
     margin-bottom: 16px;
     text-align: center;
 }
 
-.newPassword__subtitle{
+.newCard__subtitle{
     color: var(--very-ligth-pink);
     font-size: var(--md);
     font-weight: 300;
@@ -77,7 +78,7 @@ body{
     flex-direction: column;
 }
 
-/* Password and Repeat passwornd. */
+/* Password and Repeat password. */
 
 .form__label{
     font-size: var(--sm);
@@ -138,7 +139,7 @@ body{
 /* Design for the moviles. */
 
 @media only screen and (max-width: 375px){
-    .newPassword__container{
+    .newCard__container{
         width: 70%;
     }
 }
@@ -146,9 +147,46 @@ body{
 /* Design for the moviles and tablets. */
 
 @media only screen and (max-width: 640px){
-        .newPassword__logo{
+        .newCard__logo{
         display: block;
     }
 }
 
 /* =============== End Register.html ===============*/
+
+/* Content */
+
+.newCard__container--email{
+    justify-items: center;
+}
+
+/* Image email */
+
+.newCard__container--image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--shadows);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 25px;
+}
+
+.newCard__image{
+    width: 60%;
+}
+
+/* Button for login and section for resend the email. */
+
+.newCard__container--paragraph{
+    font-size: var(--sm);
+    margin-top: 20px;
+}
+
+.newCard__link{
+    color: var(--pink-hospital);
+    text-decoration: none;
+}
+
+/* =============== End Email.html ===============*/
