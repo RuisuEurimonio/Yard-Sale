@@ -20,6 +20,7 @@ body{
 
 /* =============== Start Register.html ===============*/
 /* =============== Start Email.html ===============*/
+/* =============== Start Login.html ===============*/
 
 /* Create new password section. */
 
@@ -115,7 +116,6 @@ body{
 /* Button for send the form. */
 
 .button{
-    background-color: var(--pink-hospital);
     border-radius: 8px;
     border:none;
     color: var(--white);
@@ -124,6 +124,14 @@ body{
     cursor: pointer;
     font-size: var(--md);
     transition: 1s;
+}
+
+.button__primary{
+    background-color: var(--pink-hospital);
+}
+
+.button__secondary{
+    border: 1px solid var(--pink-hospital);
 }
 
 .button:hover{
@@ -190,3 +198,53 @@ body{
 }
 
 /* =============== End Email.html ===============*/
+
+/* Text with a link for remember a password  */
+
+/* Option for can save the session. */
+
+.form__container--remember{
+    margin-top: -14px;
+}
+
+/* Text with a link for get the password. */
+
+.newCard__container--forgot{
+    text-align: center;
+}
+
+/* Button for the create a new user. */
+
+.newCard__container--sign-up{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+/* Design for tablets and desktops. */
+
+@media only screen and (min-width: 376px){
+    .newCard__container--sign-up{
+        margin-top: -350px;
+    }
+
+    .newCard__button--sign-up{
+        width: 70%;
+        max-width: 300px;
+    }
+}
+
+/* Design for moviles. */
+
+@media only screen and (max-width: 375px) {
+        .newCard__container--sign-up{
+            position: absolute;
+            bottom: 10px;
+        }
+
+        .newCard__button--sign-up{
+            width: 70%;
+    }
+}
+
+/* =============== End Login.html ===============*/
