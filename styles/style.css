@@ -22,6 +22,7 @@ body{
 /* =============== Start Email.html ===============*/
 /* =============== Start Login.html ===============*/
 /* =============== Start MyAccount.html ===============*/
+/* =============== Start EditAccount.html ===============*/
 
 /* Create new password section. */
 
@@ -133,6 +134,7 @@ body{
 
 .button__secondary{
     border: 1px solid var(--pink-hospital);
+    color: var(--pink-hospital)
 }
 
 .button:hover{
@@ -257,3 +259,19 @@ body{
 }
 
 /* =============== End MyAccount.html ===============*/
+
+/* Name, Email address, Password */
+
+.form__input--disabled{
+    transition: 0;
+    color: var(--very-ligth-pink);
+}
+
+.form__input--disabled:hover,
+.form__input--disabled:focus,
+.form__input--disabled:active{
+    border: .5px solid var(--pink-hospital);
+    transition: 0;
+}
+
+/* =============== End EditAccount.html ===============*/
