@@ -1,0 +1,127 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --very-ligth-pink: #838383;
+    --text-input-field: #F7F7F7;
+    --pink-hospital: #FF85E0;
+    --black: #0C0F0A;
+    --white: ##F5F5F5;
+    --shadows: #F2B5D4;
+    --secundary-color: #F7D6E0;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+/* Container */
+
+.main{
+    padding: 20px;
+}
+
+.cards__container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 30px;
+    place-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+/* Individual card of the product. */
+
+.card{
+    width: 240px;
+    background-color: var(--shadows);
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid var(--pink-hospital)
+}
+
+/* Product image. */
+
+.card__img{
+    width: 100%;
+    height: auto;
+    min-height: 240px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+/* Description about the product and icon. */
+
+.card__description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Description about the product and icon. */
+
+.card__price{
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.card__name{
+    font-size: var(--sm);
+    margin: 0;
+    color: var(--very-ligth-pink);
+}
+
+
+/* Icon state. */
+
+.card__figure{
+    margin:0;
+    margin-right: 10px;
+}
+
+.card__img--icon{
+    width: 35px;
+    height: 35px;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.card__img--icon:hover{
+    transform: scale(0.95);
+    transition: 1s;
+    box-shadow: 0px 1px 50px 0.1px var(--black);
+}
+
+.card__img--icon:active{
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+/* Design for mobiles. */
+
+@media only screen and (max-width: 640px){
+    /* Container. */
+    .cards__container{
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+
+    /* Individual card of the product. */
+    .card{
+        width: 140px;
+    }
+    
+    /* Product image. */
+    .card__img{
+        width: 100%;
+        height: auto;
+        min-height: 140px;
+        object-fit:cover;
+        border-radius: 10px;
+    }
+}
