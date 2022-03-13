@@ -13,8 +13,8 @@
 </head>
 <body>
 
-    <!-- Header section. -->
-    <header class="header">
+    <!-- Header section for mabiles. -->
+    <header class="header--mobile">
 
         <!-- Items container. -->
         <div class="header__container">
@@ -38,6 +38,48 @@
         </div>
     </header>
 
+    <!-- Header section for desktops. -->
+    <header class="header--desktop">
+
+        <!-- Container items. -->
+        <div class="header__container--desktop">
+
+            <!-- Icon.  -->
+            <img class="header__img--desktop" src="./assets/logos/logo_yard_sale.svg" alt="Business logo." />
+
+            <!-- Categories list. -->
+            <ul class="header__list--desktop">
+                <li class="header__item--desktop">
+                    <a class="header__link--desktop" href="#"> All. </a>
+                </li>
+                <li class="header__item--desktop">
+                    <a class="header__link--desktop" href="#"> Computers. </a>
+                </li>
+                <li class="header__item--desktop">
+                    <a class="header__link--desktop" href="#"> Mouses. </a>
+                </li>
+                <li class="header__item--desktop">
+                    <a class="header__link--desktop" href="#"> Keyboards. </a>
+                </li>
+                <li class="header__item--desktop">
+                    <a class="header__link--desktop" href="#"> Headphones. </a>
+                </li>
+                <li class="header__item--desktop">
+                    <a class="header__link--desktop" href="#"> Microphones. </a>
+                </li>
+            </ul>
+
+            <!-- Account info. -->
+            <div class="header__account--desktop">
+                <p class="header__sign-in--desktop header__hidden--account"> Sign in. </p>
+                <p class="header__myEmail--desktop"> email@example.com </p>
+            </div>
+
+            <!-- Shopping cart icon -->
+            <img class="header__notification--desktop" src="./assets/icons/icon_shopping_cart.svg" alt="shopping cart icon" />
+        </div>
+    </header>
+
     <!-- Navbar section.  -->
     <nav class="navbar navbar--hidden" id="navbar">
 
@@ -48,30 +90,30 @@
             <img class="navbar__close" id="navbar__close" src="./assets/icons/icon_close.png" alt="Icon close navbar.">
 
             <!-- Options list navbar. -->
-            <ul class="navbar__list navbar__list--categories">
+            <ul class="navbar__list">
                 <li class="navbar__item">
                     <h3 class="navbar__title"> CATEGORIES. </h3>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href=""> All. </a>
+                    <a class="navbar__link" href="#"> All. </a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href=""> Computers. </a>
+                    <a class="navbar__link" href="#"> Computers. </a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href=""> Mouses. </a>
+                    <a class="navbar__link" href="#"> Mouses. </a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href=""> Keyboards </a>
+                    <a class="navbar__link" href="#"> Keyboards </a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href=""> Headphones. </a>
+                    <a class="navbar__link" href="#"> Headphones. </a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href=""> Screens. </a>
+                    <a class="navbar__link" href="#"> Screens. </a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href=""> Microphones. </a>
+                    <a class="navbar__link" href="#"> Microphones. </a>
                 </li>
             </ul>
             <!-- Second list of options. -->
@@ -96,12 +138,19 @@
     <!-- New page section. -->
     <main>
 
+        <!-- Section for mobiles, categories, search section and filters. -->
         <section class="options">
+
+            <!-- Container items. -->
             <div class="options__container">
+
+                <!-- Search section. -->
                 <div class="options__container--search">
                     <span class="options__container--image"> <img class="options__image" src="./assets/icons/buscar.png" alt="search icon" />  </span>
                     <input class="options__search" type="search" placeholder="search. . .">
                 </div>
+
+                <!-- Categories section. -->
                 <ul class="options__list options__list--categories">
                     <li class="options__item options__item--active">
                         <a class="options__link options__link--active" href=""> All. </a>
@@ -125,8 +174,10 @@
                         <a class="options__link" href=""> Microphones. </a>
                     </li>
                 </ul>
+
+                <!-- Filters section. -->
                 <div class="options__container--filter">
-                    <label for="filter"> Order: </label>
+                    <label class="options__filter--title" for="options"> Order: </label>
                     <select class="options__filter" id="filter" name="filter">
                         <option value="Most Recent"> Most Recent. </option>
                         <option value="Last Recent"> Last Recent. </option>

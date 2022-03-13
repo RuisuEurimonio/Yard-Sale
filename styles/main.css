@@ -21,341 +21,430 @@ body{
 
 /* ========== Start Header ========== */
 
-/* Header section. */
+    /* Header section for mabiles. */
 
-.header{
-    width: 100%;
-    height: 40px;
-    background-color: var(--secundary-color);
-    padding: 0px;
-}
+    .header--mobile{
+        width: 100%;
+        height: 40px;
+        background-color: var(--secundary-color);
+        padding: 0px;
+    }
 
-/* Items container. */
+    /* Items container. */
 
-.header__container{
-    width: 100%;
-    height: 100%;
-}
+    .header__container{
+        width: 100%;
+        height: 100%;
+    }
 
-/* Header list. */
+    /* Header list. */
 
-.header__list{
-    padding: 0px;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+    .header__list{
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Menu icon, Business logo, Shoping car icon */
+    /* Menu icon, Business logo, Shoping car icon */
 
-.header__item{
-    height: 20px;
-    list-style: none;
-    margin: 0 10px;
-}
+    .header__item{
+        height: 20px;
+        list-style: none;
+        margin: 0 10px;
+    }
 
-/* Menu icon. */
+    /* Menu icon. */
 
-.header__img{
-    height: 100%;
-}
+    .header__img{
+        height: 100%;
+    }
+
+    @media only screen and (min-width:640px){
+        .header--mobile{
+            display:none;
+        }
+    }
+
+    /* Header Section for desktops. */
+
+    .header--desktop{
+        width: 100%;
+        height:50px;
+        background-color: var(--secundary-color);
+    }
+
+    /* Container items. */
+    .header__container--desktop{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Icon  */
+    .header__img--desktop{
+        height: 20px;
+        object-fit: cover;
+    }
+
+    /* Categories list. */
+    .header__list--desktop{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__item--desktop{
+        list-style: none;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .header__link--desktop{
+        text-decoration: none;
+        color: var(--black);
+
+    }
+
+    /* Account info. */
+    .header__hidden--account{
+        display: none;
+    }
+
+    /* Design for mobile and tablets, header desktop hidden. */
+    @media only screen and (max-width: 639px){
+        .header--desktop{
+            display: none;
+        }
+    }
+
+    /* Design for tablets for categories in the header. */
+    @media only screen and (min-width:639px) and (max-width:1008px){
+        .header__list--desktop{
+            overflow-x: scroll;
+            width: 45%;
+        }
+    }
 
 /* ========== End Header ========== */
 
 /* ========== Start Nav ========== */
 
-/* Navbar section.   */
+    /* Navbar section.   */
 
-.navbar{
-    top: 0;
-    position: fixed;
-    background: var(--secundary-color);
-    height: 100vh;
-    z-index: 1000;
-    transition:1s;
-    left: 0;
-}
-
-.navbar--hidden{
-    left: -600px;
-    transition: 1s;
-}
-
-/* Items container. */
-
-.navbar__container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-around;
-}
-
-/* Icon for close the navbar. */
-
-.navbar__close{
-    background-color: var(--white);
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 8px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 1px solid var(--black);
-}
-
-/* Options list navbar, Second list of options.  */
-
-.navbar__list{
-    margin: 0;
-    padding: 0;
-}
-
-.navbar__item{
-    list-style: none;
-    margin: 30px 25px;
-    padding: 0;
-}
-
-.navbar__title{
-    font-size: var(--lg);
-}
-
-.navbar__link{
-    text-decoration: none;
-    color: var(--black);
-    font-weight: bold;
-    font-size: var(--md);
-}
-
-.navbar__separator{
-    width: 70%;
-    margin: auto;
-}
-
-/* About the session. */
-
-.navbar__sign-out{
-    margin: 30px;
-}
-
-.navbar__email{
-    font-size: var(--sm);
-    margin-bottom: 0;
-}
-
-.navbar__sign-out--option{
-    font-size: var(--sm);
-    color: var(--pink-hospital);
-}
-
-@media only screen and (min-width: 640px){
     .navbar{
-        display: none;
+        top: 0;
+        position: fixed;
+        background: var(--secundary-color);
+        height: 100vh;
+        z-index: 1000;
+        transition:1s;
+        left: 0;
     }
-}
+
+    .navbar--hidden{
+        left: -600px;
+        transition: 1s;
+    }
+
+    /* Items container. */
+
+    .navbar__container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    /* Icon for close the navbar. */
+
+    .navbar__close{
+        background-color: var(--white);
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 8px;
+        margin: 5px;
+        border-radius: 10px;
+        border: 1px solid var(--black);
+    }
+
+    /* Options list navbar, Second list of options.  */
+
+    .navbar__list{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar__item{
+        list-style: none;
+        margin: 30px 25px;
+        padding: 0;
+    }
+
+    .navbar__title{
+        font-size: var(--lg);
+    }
+
+    .navbar__link{
+        text-decoration: none;
+        color: var(--black);
+        font-weight: bold;
+        font-size: var(--md);
+    }
+
+    .navbar__separator{
+        width: 70%;
+        margin: auto;
+    }
+
+    /* About the session. */
+
+    .navbar__sign-out{
+        margin: 30px;
+    }
+
+    .navbar__email{
+        font-size: var(--sm);
+        margin-bottom: 0;
+    }
+
+    .navbar__sign-out--option{
+        font-size: var(--sm);
+        color: var(--pink-hospital);
+    }
+
+    @media only screen and (min-width: 639px){
+        .navbar{
+            display: none;
+        }
+    }
 
 /* ========== End Nav ========== */
 
-/* ========== Start Options ========== */
+/* ========== Start Options in main section. ========== */
 
-.options{
-    margin-top: 15px;
-    width: 100%;
-}
+    /* Section for mobiles, categories, search section and filters. */
+        .options{
+            margin-top: 15px;
+            width: 100%;
+        }
 
-.options__container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
+        /* Container items. */
+        .options__container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
 
-.options__container--search{
-    width: 90%;
-    display: flex;
-}
+        /* Search section. */
+        .options__container--search{
+            width: 90%;
+            display: flex;
+        }
 
-.options__container--image{
-    width: 10%;
-    border: 1px solid var(--shadows);
-    border-right: none;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
+        .options__container--image{
+            width: 10%;
+            border: 1px solid var(--shadows);
+            border-right: none;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
 
-.options__image{
-    width: 15px;
-}
+        .options__image{
+            width: 15px;
+        }
 
-.options__search{
-    width: 90%;
-    height: 35px;
-    border: 1px solid var(--shadows);
-    border-left: none;
-    outline: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: 1s;
-}
+        .options__search{
+            width: 90%;
+            height: 35px;
+            border: 1px solid var(--shadows);
+            border-left: none;
+            outline: none;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: 1s;
+        }
 
-.options__list{
-    width: 90%;
-    display: flex;
-    overflow-x: scroll;
-    padding: 0;
-    padding-bottom: 10px;
-}
+        /* Categories section. */
+        .options__list{
+            width: 90%;
+            display: flex;
+            overflow-x: scroll;
+            padding: 0;
+            padding-bottom: 10px;
+        }
 
-.options__item{
-    list-style: none;
-    margin: 0 5px;
-    padding: 5px 10px;
-}
+        .options__item{
+            list-style: none;
+            margin: 0 5px;
+            padding: 5px 10px;
+        }
 
-.options__link{
-    text-decoration: none;
-    color: var(--very-ligth-pink)
-}
+        .options__link{
+            text-decoration: none;
+            color: var(--very-ligth-pink)
+        }
 
-.options__item--active{
-    border: 2px solid var(--shadows);
-    border-radius: 10px;
-}
+        .options__item--active{
+            border: 2px solid var(--shadows);
+            border-radius: 10px;
+        }
 
-.options__link--active{
-    color: var(--shadows);
-}
+        .options__link--active{
+            color: var(--shadows);
+        }
 
-/* ========== End Options ========== */
+        /* Filters section. */
+        .options__filter--title{
+            font-size: var(--ms);
+            color: var(--black);
+        }
 
-/* ========== Start Main ========== */
+        .options__filter{
+            color: var(--very-ligth-pink);
+            font-size: var(--ms);
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
 
-/* Container */
+        /* Design for tablets and desktops, some tablets and desktops don't have the search, categories and filters in this section. */
+        @media only screen and (min-width: 639px){
+            .options{
+                display: none;
+            }
+        }
 
-.main{
-    padding: 20px 0;
-    margin: 0;
-}
+/* ========== End Options in main section. ========== */
 
-.cards__container{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 30px;
-    place-content: center;
-    width: 95%;
-    margin: auto;
-    align-items: stretch;
-    justify-items: center;
-}
+/* ========== Start grid products in main section========== */
 
-/* Individual card of the product. */
+    /* Container */
+    .main{
+        padding: 20px 0;
+        margin: 0;
+    }
 
-.card{
-    width: 240px;
-    background-color: var(--shadows);
-    padding: 8px;
-    border-radius: 10px;
-    border: 2px solid var(--pink-hospital)
-}
-
-/* Product image. */
-
-.card__img{
-    width: 100%;
-    height: auto;
-    min-height: 240px;
-    object-fit:cover;
-    border-radius: 10px;
-}
-
-/* Description about the product and icon. */
-
-.card__description{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-/* Description about the product and icon. */
-
-.card__price{
-    font-weight: bold;
-    font-size: var(--md);
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-
-.card__name{
-    font-size: var(--sm);
-    margin: 0;
-    color: var(--very-ligth-pink);
-}
-
-
-/* Icon state. */
-
-.card__figure{
-    margin:0;
-    margin-right: 10px;
-}
-
-.card__img--icon{
-    width: 35px;
-    height: 35px;
-    transition: 1s;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.card__img--icon:hover{
-    transform: scale(0.95);
-    transition: 1s;
-    box-shadow: 0px 1px 50px 0.1px var(--black);
-}
-
-.card__img--icon:active{
-    transform: scale(1.1);
-    transition: .1s;
-}
-
-/* Design for mobiles. */
-
-@media only screen and (max-width: 640px){
-    /* Container. */
     .cards__container{
-        grid-template-columns: repeat(auto-fill, 110px);
+        display:grid;
+        grid-template-columns: repeat(auto-fill, 220px);
+        gap: 30px;
+        place-content: center;
+        width: 95%;
+        margin: auto;
+        align-items: stretch;
+        justify-items: center;
+        justify-content: space-evenly;
     }
 
     /* Individual card of the product. */
     .card{
-        width: 100px;
+        width: 220px;
+        background-color: var(--shadows);
+        padding: 8px;
+        border-radius: 10px;
+        border: 2px solid var(--pink-hospital)
     }
-    
+
     /* Product image. */
     .card__img{
         width: 100%;
         height: auto;
-        min-height: 110px;
+        min-height: 240px;
         object-fit:cover;
         border-radius: 10px;
     }
 
+    /* Description about the product and icon. */
     .card__description{
-        flex-direction: column-reverse;
-        align-items: normal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
     }
 
+    .card__price{
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+
+    .card__name{
+        font-size: var(--sm);
+        margin: 0;
+        color: var(--very-ligth-pink);
+    }
+
+
+    /* Icon state. */
     .card__figure{
         margin:0;
-        text-align:center;
+        margin-right: 10px;
     }
-}
+
+    .card__img--icon{
+        width: 35px;
+        height: 35px;
+        transition: 1s;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .card__img--icon:hover{
+        transform: scale(0.95);
+        transition: 1s;
+        box-shadow: 0px 1px 50px 0.1px var(--black);
+    }
+
+    .card__img--icon:active{
+        transform: scale(1.1);
+        transition: .1s;
+    }
+
+    /* Design for mobiles. */
+    @media only screen and (max-width: 640px){
+        /* Container. */
+        .cards__container{
+            grid-template-columns: repeat(auto-fill, 110px);
+        }
+
+        /* Individual card of the product. */
+        .card{
+            width: 110px;
+        }
+        
+        /* Product image. */
+        .card__img{
+            width: 100%;
+            height: auto;
+            min-height: 110px;
+            object-fit:cover;
+            border-radius: 10px;
+        }
+
+        .card__description{
+            flex-direction: column-reverse;
+            align-items: normal;
+        }
+
+        .card__figure{
+            margin:0;
+            text-align:center;
+        }
+    }
+
+/* ========== End grid products in main section========== */
