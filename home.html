@@ -12,9 +12,120 @@
     <title> Home. </title>
 </head>
 <body>
+
+    <!-- Header section. -->
+    <header class="header">
+
+        <!-- Items container. -->
+        <div class="header__container">
+
+            <!-- Header list. -->
+            <ul class="header__list">
+
+                <!-- Menu icon. -->
+                <li class="header__item header__img--trigger" id="header__img--trigger">
+                    <img class="header__img" src="./assets/icons/icon_menu.svg" alt="Icon menu">
+                </li>
+                <!-- Business logo. -->
+                <li class="header__item">
+                    <img class="header__img" src="./assets/logos/logo_yard_sale.svg" alt="Bussiness logo Yard sale">
+                </li>
+                <!-- Shoping car icon. -->
+                <li class="header__item">
+                    <img class="header__img" src="./assets/icons/icon_shopping_cart_notification.svg" alt="Shopping cart notification, yes items.">
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navbar section.  -->
+    <nav class="navbar navbar--hidden" id="navbar">
+
+        <!-- Items container. -->
+        <div class="navbar__container">
+
+            <!-- Icon for close the navbar. -->
+            <img class="navbar__close" id="navbar__close" src="./assets/icons/icon_close.png" alt="Icon close navbar.">
+
+            <!-- Options list navbar. -->
+            <ul class="navbar__list navbar__list--categories">
+                <li class="navbar__item">
+                    <h3 class="navbar__title"> CATEGORIES. </h3>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> All. </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> Computers. </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> Mouses. </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> Keyboards </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> Headphones. </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> Screens. </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> Microphones. </a>
+                </li>
+            </ul>
+            <!-- Second list of options. -->
+            <ul class="navbar__list navbar__list--options">
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> My orders. </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=""> My account. </a>
+                </li>
+            </ul>
+            <!-- About the session. -->
+            <div class="navbar__sign-out">
+                <p class="navbar__email"> email@example.com </p>
+                <a class="navbar__sign-out--option"> Sign out. </a>
+            </div>
+        </div>
+
+    </nav>
     
     <!-- New page section. -->
     <main>
+
+        <section class="options">
+            <div class="options__container">
+                <div class="options__container--search">
+                    <span class="options__container--image"> <img class="options__image" src="./assets/icons/buscar.png" alt="search icon" />  </span>
+                    <input class="options__search" type="search" placeholder="search. . .">
+                </div>
+                <ul class="options__list options__list--categories">
+                    <li class="options__item options__item--active">
+                        <a class="options__link options__link--active" href=""> All. </a>
+                    </li>
+                    <li class="options__item">
+                        <a class="options__link" href=""> Computers. </a>
+                    </li>
+                    <li class="options__item">
+                        <a class="options__link" href=""> Mouses. </a>
+                    </li>
+                    <li class="options__item">
+                        <a class="options__link" href=""> Keyboards </a>
+                    </li>
+                    <li class="options__item">
+                        <a class="options__link" href=""> Headphones. </a>
+                    </li>
+                    <li class="options__item">
+                        <a class="options__link" href=""> Screens. </a>
+                    </li>
+                    <li class="options__item">
+                        <a class="options__link" href=""> Microphones. </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <!-- Container. -->
         <section class="main">
@@ -483,6 +594,8 @@
 
         </section>
     </main>
+
+<script src="./scripts/navbar_mobile.js"></script>
 
 </body>
 </html>

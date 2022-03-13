@@ -1,3 +1,4 @@
+html,
 body{
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
@@ -10,7 +11,7 @@ body{
     --text-input-field: #F7F7F7;
     --pink-hospital: #FF85E0;
     --black: #0C0F0A;
-    --white: ##F5F5F5;
+    --white: #F5F5F5;
     --shadows: #F2B5D4;
     --secundary-color: #F7D6E0;
     --sm: 14px;
@@ -18,10 +19,220 @@ body{
     --lg: 18px;
 }
 
+/* ========== Start Header ========== */
+
+/* Header section. */
+
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: var(--secundary-color);
+    padding: 0px;
+}
+
+/* Items container. */
+
+.header__container{
+    width: 100%;
+    height: 100%;
+}
+
+/* Header list. */
+
+.header__list{
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu icon, Business logo, Shoping car icon */
+
+.header__item{
+    height: 20px;
+    list-style: none;
+    margin: 0 10px;
+}
+
+/* Menu icon. */
+
+.header__img{
+    height: 100%;
+}
+
+/* ========== End Header ========== */
+
+/* ========== Start Nav ========== */
+
+/* Navbar section.   */
+
+.navbar{
+    top: 0;
+    position: fixed;
+    background: var(--secundary-color);
+    width: 70%;
+    height: 100vh;
+    z-index: 1000;
+    transition:1s;
+    left: 0;
+}
+
+.navbar--hidden{
+    left: -600px;
+    transition: 1s;
+}
+
+/* Items container. */
+
+.navbar__container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+/* Icon for close the navbar. */
+
+.navbar__close{
+    background-color: var(--white);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+}
+
+/* Options list navbar, Second list of options.  */
+
+.navbar__list{
+    margin-top: 20px;
+    padding: 0;
+}
+
+.navbar__item{
+    list-style: none;
+    margin: 30px 25px;
+    padding: 0;
+}
+
+.navbar__title{
+    font-size: var(--lg);
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+/* About the session. */
+
+.navbar__sign-out{
+    margin: 30px;
+}
+
+.navbar__email{
+    font-size: var(--sm);
+    margin-bottom: 0;
+}
+
+.navbar__sign-out--option{
+    font-size: var(--sm);
+    color: var(--pink-hospital);
+}
+
+/* ========== End Nav ========== */
+
+/* ========== Start Options ========== */
+
+.options{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.options__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.options__container--search{
+    width: 90%;
+    display: flex;
+}
+
+.options__container--image{
+    width: 10%;
+    border: 1px solid var(--shadows);
+    border-right: none;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.options__image{
+    width: 15px;
+}
+
+.options__search{
+    width: 90%;
+    height: 35px;
+    border: 1px solid var(--shadows);
+    border-left: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 1s;
+}
+
+.options__list{
+    width: 90%;
+    display: flex;
+    overflow-x: scroll;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.options__item{
+    list-style: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+
+.options__link{
+    text-decoration: none;
+    color: var(--very-ligth-pink)
+}
+
+.options__item--active{
+    border: 2px solid var(--shadows);
+    border-radius: 10px;
+}
+
+.options__link--active{
+    color: var(--shadows);
+}
+
+/* ========== End Options ========== */
+
+/* ========== Start Main ========== */
+
 /* Container */
 
 .main{
-    padding: 20px;
+    padding: 20px 0;
+    margin: 0;
 }
 
 .cards__container{
@@ -31,6 +242,8 @@ body{
     place-content: center;
     width: 95%;
     margin: auto;
+    align-items: stretch;
+    justify-items: center;
 }
 
 /* Individual card of the product. */
@@ -90,6 +303,7 @@ body{
     height: 35px;
     transition: 1s;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .card__img--icon:hover{
@@ -108,20 +322,30 @@ body{
 @media only screen and (max-width: 640px){
     /* Container. */
     .cards__container{
-        grid-template-columns: repeat(auto-fill, 140px);
+        grid-template-columns: repeat(auto-fill, 110px);
     }
 
     /* Individual card of the product. */
     .card{
-        width: 140px;
+        width: 100px;
     }
     
     /* Product image. */
     .card__img{
         width: 100%;
         height: auto;
-        min-height: 140px;
+        min-height: 110px;
         object-fit:cover;
         border-radius: 10px;
+    }
+
+    .card__description{
+        flex-direction: column-reverse;
+        align-items: normal;
+    }
+
+    .card__figure{
+        margin:0;
+        text-align:center;
     }
 }
