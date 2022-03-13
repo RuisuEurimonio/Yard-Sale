@@ -76,6 +76,7 @@
             </ul>
             <!-- Second list of options. -->
             <ul class="navbar__list navbar__list--options">
+                <hr class="navbar__separator">
                 <li class="navbar__item">
                     <a class="navbar__link" href=""> My orders. </a>
                 </li>
@@ -124,6 +125,15 @@
                         <a class="options__link" href=""> Microphones. </a>
                     </li>
                 </ul>
+                <div class="options__container--filter">
+                    <label for="filter"> Order: </label>
+                    <select class="options__filter" id="filter" name="filter">
+                        <option value="Most Recent"> Most Recent. </option>
+                        <option value="Last Recent"> Last Recent. </option>
+                        <option value="Low to high"> Low to high.  </option>
+                        <option value="High to low"> High to low.  </option>
+                    </select>
+                </div>
             </div>
         </section>
 
