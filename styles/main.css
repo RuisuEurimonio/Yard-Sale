@@ -19,516 +19,650 @@ body{
     --lg: 18px;
 }
 
-/* ========== Start Header ========== */
+/* =============== Start Home.html =============== */
 
-    /* Header section for mabiles. */
+    /* ========== Start Header ========== */
 
-    .header--mobile{
-        width: 100%;
-        height: 40px;
-        background-color: var(--secundary-color);
-        padding: 0px;
-    }
+        /* Header section for mabiles. */
 
-    /* Items container. */
-
-    .header__container{
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Header list. */
-
-    .header__list{
-        padding: 0px;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Menu icon, Business logo, Shoping car icon */
-
-    .header__item{
-        height: 20px;
-        list-style: none;
-        margin: 0 10px;
-    }
-
-    /* Menu icon. */
-
-    .header__img{
-        height: 100%;
-    }
-
-    @media only screen and (min-width:640px){
         .header--mobile{
-            display:none;
+            width: 100%;
+            height: 40px;
+            background-color: var(--secundary-color);
+            padding: 0px;
         }
-    }
 
-    /* Header Section for desktops. */
+        /* Items container. */
 
-    .header--desktop{
-        width: 100%;
-        height:50px;
-        background-color: var(--secundary-color);
-    }
-
-    /* Container items. */
-    .header__container--desktop{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    /* Icon  */
-    .header__img--desktop{
-        height: 20px;
-        object-fit: cover;
-    }
-
-    /* Categories list. */
-    .header__list--desktop{
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-
-    .header__item--desktop{
-        list-style: none;
-        padding: 0;
-        margin: auto 20px;
-    }
-
-    .header__link--desktop{
-        text-decoration: none;
-        color: var(--black);
-
-    }
-
-    /* Account info. */
-    .header__account--desktop{
-        position: relative;
-        transition: 1s;
-        padding: 4px;
-        box-sizing: border-box;
-    }
-
-    .header__hidden--account{
-        display: none;
-    }
-
-    .header__myEmail--desktop{
-        margin: 10px auto;
-    }
-
-    /* Menu with option. */
-    .header__options--desktop{
-        position: absolute;
-        display: flex;
-        left: 0px;
-        width: 100%;
-        height: 4px;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        background-color: var(--pink-hospital);
-        padding: 0px;
-        border-end-start-radius: 10px;
-        border-end-end-radius: 10px;
-        border-radius: 20px;
-        overflow: hidden;
-        box-sizing: border-box;
-        transition: 1s;
-        z-index: 1000;
-    }
-
-    .header__account--desktop:hover .header__options--desktop{
-        height: 8rem;
-        padding: 15px;
-        transition: 1s;
-        border: 1px solid var(--black);
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-end-start-radius: 10px;
-        border-end-end-radius: 10px;
-    }
-
-    .header__option--desktop{
-        text-decoration: none;
-        color: var(--black);
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    .header_options--separator{
-        width: 80%;
-        margin: auto;
-        outline: none;
-        border-color: var(--very-ligth-pink);
-    }
-
-    .header__sign-out--desktop{
-        text-decoration: none;
-        color: var(--black);
-    }
-
-    /* Design for mobile and tablets, header desktop hidden. */
-    @media only screen and (max-width: 639px){
-        .header--desktop{
-            display: none;
-        }
-    }
-
-    /* Design for tablets for categories in the header. */
-    @media only screen and (min-width:639px) and (max-width:1008px){
-        .header__list--desktop{
-            overflow-x: scroll;
-            width: 45%;
+        .header__container{
+            width: 100%;
             height: 100%;
-            /* Scrollbar for firefox */
-            scrollbar-color: var(--pink-hospital);
-            scrollbar-base-color: var(--secundary-color);
-            scrollbar-width: thin;
         }
 
-        /* Scrollbar for chrome, edge and safari. */
-        .header__list--desktop::-webkit-scrollbar{
-            height: 4px;
+        /* Header list. */
+
+        .header__list{
+            padding: 0px;
+            height: 100%;
             width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .header__list--desktop::-webkit-scrollbar-track{
-            background: var(--secundary-color);
-            border-radius: 20px;
+        /* Menu icon, Business logo, Shoping car icon */
+
+        .header__item{
+            height: 20px;
+            list-style: none;
+            margin: 0 10px;
         }
 
-        .header__list--desktop::-webkit-scrollbar-thumb{
-            background-color: var(--pink-hospital);
-            border-radius: 20px;
-            border: 1 solid var(--black);
+        /* ===== Start MyOrder.html ===== */
+
+        .header__item--title{
+            margin: 0;
+            font-weight: bold;
+            font-size: var(--lg);
         }
-    }
 
-/* ========== End Header ========== */
+        /* ===== End MyOrder.html ===== */
 
-/* ========== Start Nav ========== */
+        /* Menu icon. */
 
-    /* Navbar section.   */
-
-    .navbar{
-        top: 0;
-        position: fixed;
-        background: var(--secundary-color);
-        height: 100vh;
-        z-index: 1000;
-        transition:1s;
-        left: 0;
-    }
-
-    .navbar--hidden{
-        left: -600px;
-        transition: 1s;
-    }
-
-    /* Items container. */
-
-    .navbar__container{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-around;
-    }
-
-    /* Icon for close the navbar. */
-
-    .navbar__close{
-        background-color: var(--white);
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 8px;
-        margin: 5px;
-        border-radius: 10px;
-        border: 1px solid var(--black);
-    }
-
-    /* Options list navbar, Second list of options.  */
-
-    .navbar__list{
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar__item{
-        list-style: none;
-        margin: 30px 25px;
-        padding: 0;
-    }
-
-    .navbar__title{
-        font-size: var(--lg);
-    }
-
-    .navbar__link{
-        text-decoration: none;
-        color: var(--black);
-        font-weight: bold;
-        font-size: var(--md);
-    }
-
-    .navbar__separator{
-        width: 70%;
-        margin: auto;
-    }
-
-    /* About the session. */
-
-    .navbar__sign-out{
-        margin: 30px;
-    }
-
-    .navbar__email{
-        font-size: var(--sm);
-        margin-bottom: 0;
-    }
-
-    .navbar__sign-out--option{
-        font-size: var(--sm);
-        color: var(--pink-hospital);
-    }
-
-    @media only screen and (min-width: 639px){
-        .navbar{
-            display: none;
+        .header__img{
+            height: 100%;
         }
-    }
 
-/* ========== End Nav ========== */
+        @media only screen and (min-width:640px){
+            .header--mobile{
+                display:none;
+            }
+        }
 
-/* ========== Start Options in main section. ========== */
+        /* Header Section for desktops. */
 
-    /* Section for mobiles, categories, search section and filters. */
-        .options{
-            margin-top: 15px;
+        .header--desktop{
             width: 100%;
+            height:50px;
+            background-color: var(--secundary-color);
         }
 
         /* Container items. */
-        .options__container{
+        .header__container--desktop{
+            display: flex;
             width: 100%;
-            display: flex;
-            flex-direction: column;
+            height: 100%;
+            flex-direction: row;
+            justify-content: space-around;
             align-items: center;
-            overflow: hidden;
         }
 
-        /* Search section. */
-        .options__container--search{
-            width: 90%;
+        /* Icon  */
+        .header__img--desktop{
+            height: 20px;
+            object-fit: cover;
+        }
+
+        /* Categories list. */
+        .header__list--desktop{
             display: flex;
-        }
-
-        .options__container--image{
-            width: 10%;
-            border: 1px solid var(--shadows);
-            border-right: none;
-            display: flex;
-            justify-content:center;
-            align-items:center;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-        }
-
-        .options__image{
-            width: 15px;
-        }
-
-        .options__search{
-            width: 90%;
-            height: 35px;
-            border: 1px solid var(--shadows);
-            border-left: none;
-            outline: none;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            transition: 1s;
-        }
-
-        /* Categories section. */
-        .options__list{
-            width: 90%;
-            display: flex;
-            overflow-x: scroll;
             padding: 0;
-            padding-bottom: 10px;
+            margin: 0;
         }
 
-        .options__item{
+        .header__item--desktop{
             list-style: none;
-            margin: 0 5px;
-            padding: 5px 10px;
+            padding: 0;
+            margin: auto 20px;
         }
 
-        .options__link{
+        .header__link--desktop{
             text-decoration: none;
-            color: var(--very-ligth-pink)
+            color: var(--black);
+
         }
 
-        .options__item--active{
-            border: 2px solid var(--shadows);
-            border-radius: 10px;
+        /* Account info. */
+        .header__account--desktop{
+            position: relative;
+            transition: 1s;
+            padding: 4px;
+            box-sizing: border-box;
         }
 
-        .options__link--active{
-            color: var(--shadows);
+        .header__hidden--account{
+            display: none;
         }
 
-        /* Filters section. */
-        .options__filter--title{
-            font-size: var(--ms);
+        .header__myEmail--desktop{
+            margin: 10px auto;
+        }
+
+        /* Menu with option. */
+        .header__options--desktop{
+            position: absolute;
+            display: flex;
+            left: 0px;
+            width: 100%;
+            height: 4px;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            background-color: var(--pink-hospital);
+            padding: 0px;
+            border-end-start-radius: 10px;
+            border-end-end-radius: 10px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+            transition: 1s;
+            z-index: 1000;
+        }
+
+        .header__account--desktop:hover .header__options--desktop{
+            height: 8rem;
+            padding: 15px;
+            transition: 1s;
+            border: 1px solid var(--black);
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-end-start-radius: 10px;
+            border-end-end-radius: 10px;
+        }
+
+        .header__option--desktop{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .header_options--separator{
+            width: 80%;
+            margin: auto;
+            outline: none;
+            border-color: var(--very-ligth-pink);
+        }
+
+        .header__sign-out--desktop{
+            text-decoration: none;
             color: var(--black);
         }
 
-        .options__filter{
-            color: var(--very-ligth-pink);
-            font-size: var(--ms);
-            border: none;
-            background-color: transparent;
-            outline: none;
-        }
-
-        /* Design for tablets and desktops, some tablets and desktops don't have the search, categories and filters in this section. */
-        @media only screen and (min-width: 639px){
-            .options{
+        /* Design for mobile and tablets, header desktop hidden. */
+        @media only screen and (max-width: 639px){
+            .header--desktop{
                 display: none;
             }
         }
 
-/* ========== End Options in main section. ========== */
+        /* Design for tablets for categories in the header. */
+        @media only screen and (min-width:639px) and (max-width:1008px){
+            .header__list--desktop{
+                overflow-x: scroll;
+                width: 45%;
+                height: 100%;
+                /* Scrollbar for firefox */
+                scrollbar-color: var(--pink-hospital);
+                scrollbar-base-color: var(--secundary-color);
+                scrollbar-width: thin;
+            }
 
-/* ========== Start grid products in main section========== */
+            /* Scrollbar for chrome, edge and safari. */
+            .header__list--desktop::-webkit-scrollbar{
+                height: 4px;
+                width: 100%;
+            }
 
-    /* Container */
-    .main{
-        padding: 20px 0;
-        margin: 0;
-    }
+            .header__list--desktop::-webkit-scrollbar-track{
+                background: var(--secundary-color);
+                border-radius: 20px;
+            }
 
-    .cards__container{
-        display:grid;
-        grid-template-columns: repeat(auto-fill, 220px);
-        gap: 30px;
-        place-content: center;
-        width: 95%;
-        margin: auto;
-        align-items: stretch;
-        justify-items: center;
-        justify-content: space-evenly;
-    }
+            .header__list--desktop::-webkit-scrollbar-thumb{
+                background-color: var(--pink-hospital);
+                border-radius: 20px;
+                border: 1 solid var(--black);
+            }
+        }
 
-    /* Individual card of the product. */
-    .card{
-        width: 220px;
-        background-color: var(--shadows);
-        padding: 8px;
-        border-radius: 10px;
-        border: 2px solid var(--pink-hospital)
-    }
+    /* ========== End Header ========== */
 
-    /* Product image. */
-    .card__img{
-        width: 100%;
-        height: auto;
-        min-height: 240px;
-        object-fit:cover;
-        border-radius: 10px;
-    }
+    /* ========== Start Nav ========== */
 
-    /* Description about the product and icon. */
-    .card__description{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
-    }
+        /* Navbar section.   */
 
-    .card__price{
-        font-weight: bold;
-        font-size: var(--md);
-        margin-top: 0;
-        margin-bottom: 4px;
-    }
+        .navbar{
+            top: 0;
+            position: fixed;
+            background: var(--secundary-color);
+            height: 100vh;
+            z-index: 1000;
+            transition:1s;
+            left: 0;
+        }
 
-    .card__name{
-        font-size: var(--sm);
-        margin: 0;
-        color: var(--very-ligth-pink);
-    }
+        .navbar--hidden{
+            left: -600px;
+            transition: 1s;
+        }
 
+        /* Items container. */
 
-    /* Icon state. */
-    .card__figure{
-        margin:0;
-        margin-right: 10px;
-    }
+        .navbar__container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-around;
+        }
 
-    .card__img--icon{
-        width: 35px;
-        height: 35px;
-        transition: 1s;
-        border-radius: 50%;
-        cursor: pointer;
-    }
+        /* Icon for close the navbar. */
 
-    .card__img--icon:hover{
-        transform: scale(0.95);
-        transition: 1s;
-        box-shadow: 0px 1px 50px 0.1px var(--black);
-    }
+        .navbar__close{
+            background-color: var(--white);
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 1px solid var(--black);
+        }
 
-    .card__img--icon:active{
-        transform: scale(1.1);
-        transition: .1s;
-    }
+        /* Options list navbar, Second list of options.  */
 
-    /* Design for mobiles. */
-    @media only screen and (max-width: 640px){
-        /* Container. */
+        .navbar__list{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar__item{
+            list-style: none;
+            margin: 30px 25px;
+            padding: 0;
+        }
+
+        .navbar__title{
+            font-size: var(--lg);
+        }
+
+        .navbar__link{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            font-size: var(--md);
+        }
+
+        .navbar__separator{
+            width: 70%;
+            margin: auto;
+        }
+
+        /* About the session. */
+
+        .navbar__sign-out{
+            margin: 30px;
+        }
+
+        .navbar__email{
+            font-size: var(--sm);
+            margin-bottom: 0;
+        }
+
+        .navbar__sign-out--option{
+            font-size: var(--sm);
+            color: var(--pink-hospital);
+        }
+
+        @media only screen and (min-width: 639px){
+            .navbar{
+                display: none;
+            }
+        }
+
+    /* ========== End Nav ========== */
+
+    /* ========== Start Options in main section. ========== */
+
+        /* Section for mobiles, categories, search section and filters. */
+            .options{
+                margin-top: 15px;
+                width: 100%;
+            }
+
+            /* Container items. */
+            .options__container{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            /* Search section. */
+            .options__container--search{
+                width: 90%;
+                display: flex;
+            }
+
+            .options__container--image{
+                width: 10%;
+                border: 1px solid var(--shadows);
+                border-right: none;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .options__image{
+                width: 15px;
+            }
+
+            .options__search{
+                width: 90%;
+                height: 35px;
+                border: 1px solid var(--shadows);
+                border-left: none;
+                outline: none;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                transition: 1s;
+            }
+
+            /* Categories section. */
+            .options__list{
+                width: 90%;
+                display: flex;
+                overflow-x: scroll;
+                padding: 0;
+                padding-bottom: 10px;
+            }
+
+            .options__item{
+                list-style: none;
+                margin: 0 5px;
+                padding: 5px 10px;
+            }
+
+            .options__link{
+                text-decoration: none;
+                color: var(--very-ligth-pink)
+            }
+
+            .options__item--active{
+                border: 2px solid var(--shadows);
+                border-radius: 10px;
+            }
+
+            .options__link--active{
+                color: var(--shadows);
+            }
+
+            /* Filters section. */
+            .options__filter--title{
+                font-size: var(--ms);
+                color: var(--black);
+            }
+
+            .options__filter{
+                color: var(--very-ligth-pink);
+                font-size: var(--ms);
+                border: none;
+                background-color: transparent;
+                outline: none;
+            }
+
+            /* Design for tablets and desktops, some tablets and desktops don't have the search, categories and filters in this section. */
+            @media only screen and (min-width: 639px){
+                .options{
+                    display: none;
+                }
+            }
+
+    /* ========== End Options in main section. ========== */
+
+    /* ========== Start grid products in main section========== */
+
+        /* Container */
+        .main{
+            padding: 20px 0;
+            margin: 0;
+        }
+
         .cards__container{
-            grid-template-columns: repeat(auto-fill, 110px);
+            display:grid;
+            grid-template-columns: repeat(auto-fill, 220px);
+            gap: 30px;
+            place-content: center;
+            width: 95%;
+            margin: auto;
+            align-items: stretch;
+            justify-items: center;
+            justify-content: space-evenly;
         }
 
         /* Individual card of the product. */
         .card{
-            width: 110px;
+            width: 220px;
+            background-color: var(--shadows);
+            padding: 8px;
+            border-radius: 10px;
+            border: 2px solid var(--pink-hospital)
         }
-        
+
         /* Product image. */
         .card__img{
             width: 100%;
             height: auto;
-            min-height: 110px;
+            min-height: 240px;
             object-fit:cover;
             border-radius: 10px;
         }
 
+        /* Description about the product and icon. */
         .card__description{
-            flex-direction: column-reverse;
-            align-items: normal;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
         }
 
+        .card__price{
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+
+        .card__name{
+            font-size: var(--sm);
+            margin: 0;
+            color: var(--very-ligth-pink);
+        }
+
+
+        /* Icon state. */
         .card__figure{
             margin:0;
-            text-align:center;
+            margin-right: 10px;
         }
-    }
 
-/* ========== End grid products in main section========== */
+        .card__img--icon{
+            width: 35px;
+            height: 35px;
+            transition: 1s;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .card__img--icon:hover{
+            transform: scale(0.95);
+            transition: 1s;
+            box-shadow: 0px 1px 50px 0.1px var(--black);
+        }
+
+        .card__img--icon:active{
+            transform: scale(1.1);
+            transition: .1s;
+        }
+
+        /* Design for mobiles. */
+        @media only screen and (max-width: 640px){
+            /* Container. */
+            .cards__container{
+                grid-template-columns: repeat(auto-fill, 110px);
+            }
+
+            /* Individual card of the product. */
+            .card{
+                width: 110px;
+            }
+            
+            /* Product image. */
+            .card__img{
+                width: 100%;
+                height: auto;
+                min-height: 110px;
+                object-fit:cover;
+                border-radius: 10px;
+            }
+
+            .card__description{
+                flex-direction: column-reverse;
+                align-items: normal;
+            }
+
+            .card__figure{
+                margin:0;
+                text-align:center;
+            }
+        }
+
+    /* ========== End grid products in main section========== */
+
+/* =============== End Home.html =============== */
+
+/* ============== Start MyOrder.html ===============*/
+
+        /* Info about the items section. */
+        .shoppingCart{
+            height:100%;
+            width: 100%;
+        }
+
+        .shoppingCart__container{
+            width:80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px auto;
+        }
+
+        /* Title for tablets and dekstops. */
+        .shoppingCart__title--noMobile{
+            display:none;
+            margin: 0;
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+
+        /* Total section. */
+        .shoppingCart__total{
+            box-sizing: border-box;
+            display:grid;
+            grid-template-columns: auto 1fr auto auto;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: var(--secundary-color);
+            border: 1px solid var(--shadows);
+            border-radius: 15px;
+        }
+
+        .shoppingCart__paragraph{
+            margin: 0;
+        }
+
+        .shoppingCart__date{
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .shoppingCart__amount{
+            font-size: var(--sm);
+            color: var(--very-ligth-pink);
+        }
+
+        .shoppingCart__total--price{
+            text-align: end;
+            font-weight: bold;
+            font-size: var(--sm);
+        }
+
+        /* Items container. */
+        /* Item. */
+        .shoppingCart__item{
+            margin: 10px auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto 2fr 1fr;
+            align-items: center;
+        }
+
+        .shoppingCart__container--image{
+            padding: 0;
+            margin: 0;
+            height: 5rem;
+            width: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shoppingCart__image{
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .shoppingCart__item--title{
+            font-size: var(--sm);
+            color: var(--very-ligth-pink);
+            margin-right: 15px;
+        }
+
+        .shoppingCart__item--price{
+            font-weight: bold;
+        }
+
+        /* Design for tablets. */
+        @media only screen and (min-width: 640px) and (max-width: 1007px){
+            .shoppingCart__title--noMobile{
+                display:block;
+            }
+
+            .shoppingCart__container{
+                width:50%;
+            }
+        }
+
+        /* Design for desktops */
+        @media only screen and (min-width: 1008px){
+            .shoppingCart__title--noMobile{
+                display:block;
+            }
+            
+            .shoppingCart__container{
+                margin-top: 20px;
+                width:30%;
+            }
+        }
+
+/* ============== End MyOrder.html ===============*/
