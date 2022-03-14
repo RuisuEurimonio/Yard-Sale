@@ -104,7 +104,7 @@ body{
     .header__item--desktop{
         list-style: none;
         padding: 0;
-        margin: 20px;
+        margin: auto 20px;
     }
 
     .header__link--desktop{
@@ -130,6 +130,28 @@ body{
         .header__list--desktop{
             overflow-x: scroll;
             width: 45%;
+            height: 100%;
+            /* Scrollbar for firefox */
+            scrollbar-color: var(--pink-hospital);
+            scrollbar-base-color: var(--secundary-color);
+            scrollbar-width: thin;
+        }
+
+        /* Scrollbar for chrome, edge and safari. */
+        .header__list--desktop::-webkit-scrollbar{
+            height: 4px;
+            width: 100%;
+        }
+
+        .header__list--desktop::-webkit-scrollbar-track{
+            background: var(--secundary-color);
+            border-radius: 20px;
+        }
+
+        .header__list--desktop::-webkit-scrollbar-thumb{
+            background-color: var(--pink-hospital);
+            border-radius: 20px;
+            border: 1 solid var(--black);
         }
     }
 
