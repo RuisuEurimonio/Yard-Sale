@@ -550,12 +550,14 @@ body{
 /* ============== Start MyOrder.html ===============*/
 
         /* Info about the items section. */
-        .shoppingCart{
+        .shoppingCart,
+        .myShoppingCart{
             height:100%;
             width: 100%;
         }
 
-        .shoppingCart__container{
+        .shoppingCart__container,
+        .myShoppingCart__container{
             width:80%;
             display: flex;
             flex-direction: column;
@@ -572,7 +574,8 @@ body{
         }
 
         /* Total section. */
-        .shoppingCart__total{
+        .shoppingCart__total,
+        .myShoppingCart__total{
             box-sizing: border-box;
             display:grid;
             grid-template-columns: auto 1fr auto auto;
@@ -585,7 +588,8 @@ body{
             border-radius: 15px;
         }
 
-        .shoppingCart__paragraph{
+        .shoppingCart__paragraph,
+        .myShoppingCart__paragraph{
             margin: 0;
         }
 
@@ -599,7 +603,8 @@ body{
             color: var(--very-ligth-pink);
         }
 
-        .shoppingCart__total--price{
+        .shoppingCart__total--price,
+        .myShoppingCart__total--price{
             text-align: end;
             font-weight: bold;
             font-size: var(--sm);
@@ -608,7 +613,8 @@ body{
 
         /* Items container. */
         /* Item. */
-        .shoppingCart__item{
+        .shoppingCart__item,
+        .myShoppingCart__item{
             margin: 10px auto;
             width: 100%;
             display: grid;
@@ -616,7 +622,8 @@ body{
             align-items: center;
         }
 
-        .shoppingCart__container--image{
+        .shoppingCart__container--image,
+        .myShoppingCart__container--image{
             padding: 0;
             margin: 0;
             height: 5rem;
@@ -626,20 +633,23 @@ body{
             justify-content: center;
         }
 
-        .shoppingCart__image{
+        .shoppingCart__image,
+        .myShoppingCart__image{
             width: 80%;
             height: 80%;
             object-fit: cover;
             border-radius: 10px;
         }
 
-        .shoppingCart__item--title{
+        .shoppingCart__item--title,
+        .myShoppingCart__item--title{
             font-size: var(--sm);
             color: var(--very-ligth-pink);
             margin-right: 15px;
         }
 
-        .shoppingCart__item--price{
+        .shoppingCart__item--price,
+        .myShoppingCart__item--price{
             font-weight: bold;
         }
 
@@ -649,7 +659,8 @@ body{
                 display:block;
             }
 
-            .shoppingCart__container{
+            .shoppingCart__container,
+            .myShoppingCart__container{
                 width:50%;
             }
         }
@@ -681,7 +692,39 @@ body{
         margin: 10px auto;
     }
 
+    .myShoppingCart__buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button.myShoppingCart__button{
+        width: 100%;
+        padding: 10px;
+    }
+
 /* ============== End MyOrders.html =============== */
+
+.myShoppingCart__container--title{
+    display: flex;
+}
+
+.myShoppingCart__back{
+    transform: rotate(180deg);
+    margin: auto 10px;
+}
+
+.myShoppingCart__item{
+    grid-template-columns: auto 2fr 1fr auto;
+}
+
+.myShoppingCart__item--delete{
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ============== End ShoppingCart.html =============== */
 
 /* ============== Start detailExample.html ============== */
 
@@ -696,7 +739,7 @@ body{
 
     /* Container card. */
     .mainDetails__container{
-        max-width: 70%;
+        max-width: 50%;
         margin: 20px auto;
         display: flex;
         flex-direction:column;
@@ -772,11 +815,8 @@ body{
         justify-content: center;
     }
 
-    .mainDetail__button{
+    .button{
         width: 60%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
         border: 1px solid var(--pink-hospital);
         border-radius: 10px;
         background-color: var(--shadows);
@@ -784,6 +824,12 @@ body{
         font-size: var(--md);
         color: var(--white);
         transition: 1s;
+    }
+
+    .mainDetail__button{
+        display: flex;
+        align-items:center;
+        justify-content: center;
     }
 
     .mainDetail__button:hover{
