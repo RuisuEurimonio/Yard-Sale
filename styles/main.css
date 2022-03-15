@@ -603,6 +603,7 @@ body{
             text-align: end;
             font-weight: bold;
             font-size: var(--sm);
+            margin-right: 15px;
         }
 
         /* Items container. */
@@ -666,3 +667,18 @@ body{
         }
 
 /* ============== End MyOrder.html ===============*/
+
+/* ============== Start MyOrders.html =============== */
+
+    /* Total section item. */
+    .shoppingCart__total--orders{
+        box-sizing: border-box;
+        display:grid;
+        grid-template-columns: auto 1fr auto auto;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+/* ============== End MyOrders.html =============== */
