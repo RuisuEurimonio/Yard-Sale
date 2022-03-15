@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logos/favicon_bota_fora.svg">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Details about this product.</title>
+</head>
+<body>
+         <!-- Header section for mabiles. -->
+         <header class="header--mobile">
+
+            <!-- Items container. -->
+            <div class="header__container">
+    
+                <!-- Header list. -->
+                <ul class="header__list">
+    
+                    <!-- Menu icon. -->
+                    <li class="header__item header__img--trigger" id="header__img--trigger">
+                        <img class="header__img" src="./assets/icons/icon_menu.svg" alt="Icon menu">
+                    </li>
+                    <!-- Business logo. -->
+                    <li class="header__item">
+                        <p class="header__item--title"> My Orders. </p>
+                    </li>
+                    <!-- Shoping car icon. -->
+                    <li class="header__item">
+                        <img class="header__img" src="./assets/icons/icon_shopping_cart_notification.svg" alt="Shopping cart notification, yes items.">
+                    </li>
+                </ul>
+            </div>
+        </header>
+    
+        <!-- Header section for desktops. -->
+        <header class="header--desktop">
+    
+            <!-- Container items. -->
+            <div class="header__container--desktop">
+    
+                <!-- Icon.  -->
+                <img class="header__img--desktop" src="./assets/logos/logo_yard_sale.svg" alt="Business logo." />
+    
+                <!-- Categories list. -->
+                <ul class="header__list--desktop">
+                    <li class="header__item--desktop">
+                        <a class="header__link--desktop" href="#"> All. </a>
+                    </li>
+                    <li class="header__item--desktop">
+                        <a class="header__link--desktop" href="#"> Computers. </a>
+                    </li>
+                    <li class="header__item--desktop">
+                        <a class="header__link--desktop" href="#"> Mouses. </a>
+                    </li>
+                    <li class="header__item--desktop">
+                        <a class="header__link--desktop" href="#"> Keyboards. </a>
+                    </li>
+                    <li class="header__item--desktop">
+                        <a class="header__link--desktop" href="#"> Headphones. </a>
+                    </li>
+                    <li class="header__item--desktop">
+                        <a class="header__link--desktop" href="#"> Microphones. </a>
+                    </li>
+                </ul>
+    
+                <!-- Account info. -->
+                <div class="header__account--desktop">
+                    <p class="header__sign-in--desktop header__hidden--account"> Sign in. </p>
+                    <p class="header__myEmail--desktop"> email@example.com </p>
+    
+                    <!-- Menu with option. -->
+                    <div class="header__options--desktop">
+                        <a class="header__option--desktop" href="#"> My orders. </a>
+                        <a class="header__option--desktop" href="#"> My account. </a>
+                        <hr class="header_options--separator">
+                        <a class="header__sign-out--desktop" href="#"> Sign out. </a>
+                    </div>
+                </div>
+    
+                <!-- Shopping cart icon -->
+                <img class="header__notification--desktop" src="./assets/icons/icon_shopping_cart.svg" alt="shopping cart icon" />
+            </div>
+        </header>
+    
+        <!-- Navbar section.  -->
+        <nav class="navbar navbar--hidden" id="navbar">
+    
+            <!-- Items container. -->
+            <div class="navbar__container">
+    
+                <!-- Icon for close the navbar. -->
+                <img class="navbar__close" id="navbar__close" src="./assets/icons/icon_close.png" alt="Icon close navbar.">
+    
+                <!-- Options list navbar. -->
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <h3 class="navbar__title"> CATEGORIES. </h3>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#"> All. </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#"> Computers. </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#"> Mouses. </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#"> Keyboards </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#"> Headphones. </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#"> Screens. </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#"> Microphones. </a>
+                    </li>
+                </ul>
+                <!-- Second list of options. -->
+                <ul class="navbar__list navbar__list--options">
+                    <hr class="navbar__separator">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href=""> My orders. </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href=""> My account. </a>
+                    </li>
+                </ul>
+                <!-- About the session. -->
+                <div class="navbar__sign-out">
+                    <p class="navbar__email"> email@example.com </p>
+                    <a class="navbar__sign-out--option"> Sign out. </a>
+                </div>
+            </div>
+    
+        </nav>
+        
+        <main class="mainDetails">
+            <section class="mainDetails__container">
+                <div class="mainDetails__images">
+                    <img class="mainDetails__close" src="./assets/icons/icon_close.png" alt="icon close" />
+                    <img class="mainDetails__product" src="./assets/images/pc2.jpg" alt="Pc and peripherals image" />
+                </div>
+                <div class="mainDetails__options">
+                    <input class="mainDetails__option" type="radio" name="image" checked>
+                    <input class="mainDetails__option" type="radio" name="image" disabled>
+                    <input class="mainDetails__option" type="radio" name="image" disabled>
+                </div>
+                <div class="mainDetails__info">
+                    <p class="mainDetails__price"> $140.00. </p>
+                    <p class="mainDetails__title"> Pc and peripherals. </p>
+                    <p class="mainDetails__description"> This pc have a i7 processor, 16Gb of RAM and a SSD with 1Tb, this product includes a mechanical keyboard with leds and a mouse with 7 buttons. Apple brand with two years of warranty and windows 10 legal.  </p>
+                </div>
+                <div class="mainDetails__buttons">
+                    <button class="mainDetail__button"> 
+                        <img class="mainDetail__cart" src="./assets/icons/bt_add_to_cart.svg" alt="add to cart icon" /> 
+                        Add to cart. 
+                    </button>
+                </div>
+            </section>
+        </main>
+</body>
+</html>

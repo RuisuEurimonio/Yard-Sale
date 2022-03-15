@@ -682,3 +682,132 @@ body{
     }
 
 /* ============== End MyOrders.html =============== */
+
+/* ============== Start detailExample.html ============== */
+
+    /* Detail product section. */
+    .mainDetails{
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Container card. */
+    .mainDetails__container{
+        max-width: 70%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding-bottom: 10px;
+        background-color: var(--secundary-color);
+        border: 2px solid var(--shadows);
+        border-radius: 0 0 15px 15px;
+    }
+
+    /* Images product. */
+    .mainDetails__images{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainDetails__product{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .mainDetails__close{
+        position: absolute;
+        width: 2.5%;
+        top: 10px;
+        left: 10px;
+        background-color: var(--white);
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .mainDetails__close:hover{
+        transform: scale(0.95);
+        box-shadow: 0 .1px 80px .5px var(--black);
+        transition: 1s;
+    }
+
+    .mainDetails__close:active{
+        transform: scale(1.05);
+        transition: .1s;
+    }
+
+    /* Description product. */
+    .mainDetails__info{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .mainDetails__price,
+    .mainDetails__title{
+        margin: 0;
+    }
+
+    .mainDetails__price{
+        font-weight: bold;
+        font-size: var(--lg);
+    }
+
+    .mainDetails__title{
+        color: var(--very-ligth-pink);
+        font-size: var(--md);
+    }
+
+    /* Button for add to cart. */
+    .mainDetails__buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainDetail__button{
+        width: 60%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border: 1px solid var(--pink-hospital);
+        border-radius: 10px;
+        background-color: var(--shadows);
+        cursor: pointer;
+        font-size: var(--md);
+        color: var(--white);
+        transition: 1s;
+    }
+
+    .mainDetail__button:hover{
+        box-shadow: 0 2px 10px 0 var(--black);
+        transition: .8s;
+        transform: scale(0.95);
+    }
+
+    .mainDetail__button:active{
+        box-shadow: 0 2px 10px 0 var(--black);
+        transition: .1s;
+        transform: scale(1.02);
+    }
+
+    .mainDetail__cart{
+        width: 30px;
+        margin: 5px;
+    }
+
+    /* Design for mobiles and some tablets. */
+    @media only screen and (max-width: 640px){
+        .mainDetails__container{
+            max-width: 95%;
+        }
+    }
+
+/* ============== End detailExample.html ============== */
